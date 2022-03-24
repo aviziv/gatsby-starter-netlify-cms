@@ -244,3 +244,18 @@ collections:
                   },
                 ],
             }
+
+      - file: "src/pages/events/index.md"
+        label: "Events Page"
+        name: "events"
+        fields:
+          - {
+            label: "Template Key",
+            name: "templateKey",
+            widget: "hidden",
+            default: "event-preview-page",
+          }
+          - { label: Image, name: image, widget: image }
+          - { label: StartDate, name: startDate, widget: "datetime" }
+          - { label: EndDate, name: endDate, widget: "datetime" }
+          - { label: Title, name: title, widget: string }
